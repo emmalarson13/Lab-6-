@@ -23,6 +23,14 @@ def encoder(data):
             password+='2'
     return password
 
+def decode(password):
+    decoded = ''
+    for i in password:
+        if int(i) >= 3:
+            decoded += str(int(i) - 3)
+        else:
+            decoded += str(int(i) + 7)
+    return decoded
 
 
 if __name__=='__main__':
@@ -38,8 +46,8 @@ if __name__=='__main__':
             print('Your password has been encoded and stored! ')
         if option == 2:
 
-            print(f"The encoded password is {temp}, and the original password is {decoder(temp)}.")
-            print(decoder(temp))
+            print(f"The encoded password is {temp}, and the original password is {decode(temp)}.")
+            print(decode(temp))
         if option==3:
             break
 
