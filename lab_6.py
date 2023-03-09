@@ -1,3 +1,5 @@
+# Emma Larson
+
 def encoder(data):
     password=''
     for i in data:
