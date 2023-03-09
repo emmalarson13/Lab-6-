@@ -46,11 +46,10 @@ if __name__=='__main__':
         option= int(input('Please enter an option: '))
         if option==1:
             temp= encoder((input('Please enter your password to encode: ')))
-            print('Your password has been encoded and stored! ')
+            print('Your password has been encoded and stored!\n')
         if option == 2:
+            print(f"The encoded password is {temp}, and the original password is {decode(temp)}.\n")
 
-            print(f"The encoded password is {temp}, and the original password is {decode(temp)}.")
-            print(decode(temp))
         if option==3:
             break
 
