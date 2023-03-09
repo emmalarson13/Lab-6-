@@ -42,6 +42,7 @@ if __name__=='__main__':
         print('1. Encode')
         print('2. Decode')
         print('3. Quit')
+        print()
         option= int(input('Please enter an option: '))
         if option==1:
             temp= encoder((input('Please enter your password to encode: ')))
